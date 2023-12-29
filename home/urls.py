@@ -21,7 +21,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns #new
 
 
 urlpatterns = [
-    path('', views.index)
+    path('', views.index),
 ]
 
 
