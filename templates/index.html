@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Site</title>
+    <link rel="stylesheet" type="text/css" href='{% static "style.css" %}'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+
+        <div class="menu_side">
+            <h1>Playlist</h1>
+            <div class="playlist">
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Playlist</h4>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i>Last Listened</h4>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i>Recomneded</h4>
+            </div>
+            <div class="menu_song">
+                <li class="songitem">
+                    <span>01</span>
+                    <img src="/static/img/1-1.jpg" alt="">
+                    <h5>Unholy <br>
+                        <div class="subtitle">Badscandal feat. Nito-Onna</div>
+                    </h5>
+                    <i class="bi playlistPlay bi-play-circle" id="1"></i>
+                        
+                </li>
+                <li class="songitem">
+                    <span>02</span>
+                    <img src="/static/img/2.jpg" alt="">
+                    <h5>Rockstar<br>
+                        <div class="subtitle">Dynoro Ilkay Sencanr</div>
+                    </h5>
+                    <i class="bi playlistPlay bi-play-circle" id="2"></i>
+                        
+                </li>
+                <li class="songitem">
+                    <span>03</span>
+                    <img src="/static/img/3.jpg" alt="">
+                    <h5>Candy Shop<br>
+                        <div class="subtitle">CryJaxx (feat. Junior Charles)</div>
+                    </h5>
+                    <i class="bi playlistPlay bi-play-circle" id="3"></i>
+                        
+                </li>
+                <li class="songitem">
+                    <span>04</span>
+                    <img src="/static/img/4.jpg" alt="">
+                    <h5>Bloody Mary <br>
+                        <div class="subtitle">Nito-Onna</div>
+                    </h5>
+                    <i class="bi playlistPlay bi-play-circle" id="4"></i>
+                        
+                </li>
+                <li class="songitem">
+                    <span>05</span>
+                    <img src="/static/img/5.jpg" alt="">
+                    <h5>Not Fair <br>
+                        <div class="subtitle">Niklas Dee, Old Jim feat. Enny-Mae</div>
+                    </h5>
+                    <i class="bi playlistPlay bi-play-circle" id="5"></i>
+                        
+                </li>
+                <li class="songitem">
+                    <span>06</span>
+                    <img src="/static/img/6.jpg" alt="">
+                    <h5>Numb <br>
+                        <div class="subtitle">Arc North</div>
+                    </h5>
+                    <i class="bi playlistPlay bi-play-circle" id="6"></i>
+                        
+                </li>
+                <li class="songitem">
+                    <span>07</span>
+                    <img src="/static/img/7.jpg" alt="">
+                    <h5>I'm Good <br>
+                        <div class="subtitle">Poylow, Yohan Gerberr</div>
+                    </h5>
+                    <i class="bi playlistPlay bi-play-circle" id="7"></i>
+                        
+                </li>
+                <li class="songitem">
+                    <span>08</span>
+                    <img src="/static/img/8.jpg" alt="">
+                    <h5>Ghost Town<br>
+                        <div class="subtitle">VIZE feat. Joris Sava & July</div>
+                    </h5>
+                    <i class="bi playlistPlay bi-play-circle" id="8"></i>
+                        
+                </li>
+            </div>
+        </div>
+        <div class="song_side">
+            <nav>
+                <ul>
+                    <li>DISCOVER <span></span></li>
+                    <li>MY LIBRARY</li>
+                    <li>RADIO</li>
+                </ul>
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Search Music...">
+                    <div class="search_results">
+                        <!-- <a href="" class="card">
+                            <img src="/static/img/1.jpg" alt="">
+                            <div class="content">
+                                fesdfsdhihihih
+                                <div class="subtitle">sdfgsdfg</div>
+                            </div>
+                        </a> -->
+                        <!-- <a href="" class="card"></a> -->
+                    </div>
+                </div>
+                <div class="user">
+                    <img src="/static/img/img1.jpg" alt="">
+                </div>
+            </nav>
+            <div class="content">
+                <h1>Alan Walker-fade</h1>
+                <p>You were the shadow to my light did you fell us Anthoer start you fade 
+                    <br>Away afraid our  aim is out of sight wana see a light</p>
+                    <div class="buttons">
+                        <button>PLAY</button>
+                        <button>FOLLOW</button>
+                    </div>
+            </div>
+            <div class="popular_song">
+                <div class="h4">
+                    <h4>Popular_song</h4>
+                    <div class="btn_s">
+                        <i class="bi bi-arrow-left-short" id="pop_song_left"></i>
+                        <i class="bi bi-arrow-right-short" id="pop_song_right"></i>
+                    </div>
+                </div>
+                <div class="pop_song">
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="/static/img/9.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="9"></i>
+                        </div>
+                        <h5>Faded <br>
+                            <div class="subtitle">Arc North and Cour</div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="/static/img/10.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="10"></i>
+                        </div>
+                        <h5>You Right <br>
+                            <div class="subtitle">Nedevelir, Neil Bronson, LO RA Cover (Magic Cover Release)</div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="/static/img/11.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="11"></i>
+                        </div>
+                        <h5>In My Mind <br>
+                            <div class="subtitle">Dynoro</div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="/static/img/12.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="12"></i>
+                        </div>
+                        <h5>Tourner Dans Le Vide  <br>
+                            <div class="subtitle">(Badscandal Cover)</div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="/static/img/13.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="13"></i>
+                        </div>
+                        <h5>Stereo Hearts (Ft. Kris Norton) <br>
+                            <div class="subtitle">EQRIC, PHARAØH, Britt</div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="/static/img/14.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="14"></i>
+                        </div>
+                        <h5>Daddy DJ <br>
+                            <div class="subtitle">Nito-Onna, Harddope Cover</div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="/static/img/15.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="15"></i>
+                        </div>
+                        <h5>Push Up (Main Edit)<br>
+                            <div class="subtitle">Creeds</div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="/static/img/16.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="16"></i>
+                        </div>
+                        <h5>Can’t Feel My Face <br>
+                            <div class="subtitle">(IntoAlter, PACANI, DVO Cover) </div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="/static/img/17.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="17"></i>
+                        </div>
+                        <h5>How We Do  <br>
+                            <div class="subtitle">Lamedy, Mantara, Don Barleone Coverr</div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="/static/img/18.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="18"></i>
+                        </div>
+                        <h5>Belly Dancer<br>
+                            <div class="subtitle">Imanbek feat. BYOR</div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="/static/img/19.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="19"></i>
+                        </div>
+                        <h5>We Can't Stop <br>
+                            <div class="subtitle">(Poylow, Rich Fayden, Stayer Cover)</div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="/static/img/20.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="20"></i>
+                        </div>
+                        <h5>Rude <br>
+                            <div class="subtitle">Dream Chaos</div>
+                        </h5> 
+                    </li>
+                </div>
+            </div>
+            <div class="popular_artists">
+                <div class="h4">
+                    <h4>Popular_Aritist</h4>
+                    <div class="btn_s">
+                        <i class="bi bi-arrow-left-short" id="pop_art_left"></i>
+                        <i class="bi bi-arrow-right-short" id="pop_art_right"></i>
+                    </div>
+                </div>
+                <div class="item">
+                    <li>
+                        <a href="arijit.html"><img src="/static/img/arjit/arjit.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="Vidya-vox.html"><img src="/static/img/vox/vidya-vox.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="/static/img/arjit/arjit.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="/static/img/arjit/arjit.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="/static/img/arjit/arjit.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="/static/img/arjit/arjit.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="/static/img/arjit/arjit.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="/static/img/arjit/arjit.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="/static/img/arjit/arjit.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="/static/img/arjit/arjit.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="/static/img/arjit/arjit.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="/static/img/arjit/arjit.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="/static/img/arjit/arjit.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="/static/img/arjit/arjit.jpg" alt=""></a>
+                    </li>
+                </div>
+            </div>
+        </div>
+        <div class="master_play">
+            <div class="wave" id="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>   
+            <img src="/static/img/1-1.jpg" alt="" id="poster_master_play">
+            <h5 id="title">
+                unholy
+                <div class="subtitle">Badscandal feat Nito</div>
+            </h5>
+            <div class="icon">
+                <i class="bi shuffle bi-music-note-beamed">next</i>
+                <i class="bi bi-skip-start" id="back"></i>
+                <i class="bi bi-play-fill" id="masterPlay"></i>
+                <i class="bi bi-skip-end" id="next"></i>
+                <a href="#" download id="download_music"><i class="bi bi-cloud-arrow-down-fill" ></i></a>
+            </div>
+            <span id="currentStart">0:00</span>
+            <div class="bar">
+                <input type="range" id="seek" min="0" max="100">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+            </div>
+            <span id="currentEnd">0:30</span>
+            <div class="vol">
+                <i class="bi bi-volume-up-fill" id="vol_icon"></i>
+                <input type="range"  id="vol" min="0" max="100">
+                <div class="vol_bar"></div>
+                <div class="dot" id="vol_dot"></div>
+            </div>
+        </div>
+    </header>
+    
+    <script src="{% static "app.js" %}"></script>
+</body>
+</html>

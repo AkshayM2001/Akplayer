@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Site</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        header .song_side::before{
+            background: url(/img/vox/vidya-vox.jpg);
+            /* background-size: cover; */
+            background-repeat: no-repeat;
+            margin:  60px 0 0 620px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+
+        <div class="menu_side">
+            <h1>Playlist</h1>
+            <div class="playlist">
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Playlist</h4>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i>Last Listened</h4>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i>Recomneded</h4>
+            </div>
+            <div class="menu_song">
+                <li class="songitem">
+                    <span>01</span>
+                    <img src="/img/vox/1.jpg" alt="">
+                    <h5>Be Free <br>
+                        <div class="subtitle"> Vidya Vox </div>
+                    </h5>
+                    <i class="bi playlistPlay bi-play-circle" id="1"></i>
+                        
+                </li>
+                <li class="songitem">
+                    <span>02</span>
+                    <img src="/img/vox/2.jpg" alt="">
+                    <h5>Diamonds  <br>
+                        <div class="subtitle"> Vidya Vox, and Arjun</div>
+                    </h5>
+                    <i class="bi playlistPlay bi-play-circle" id="2"></i>
+                        
+                </li>
+                <li class="songitem">
+                    <span>03</span>
+                    <img src="/img/vox/3.jpg" alt="">
+                    <h5>Kuthu Fire x<br>
+                        <div class="subtitle"> Vidya Vo</div>
+                    </h5>
+                    <i class="bi playlistPlay bi-play-circle" id="3"></i>
+                        
+                </li>
+                <li class="songitem">
+                    <span>04</span>
+                    <img src="/img/vox/4.jpg" alt="">
+                    <h5>Subha Mangalyam <br>
+                        <div class="subtitle">  Vidya Vox </div>
+                    </h5>
+                    <i class="bi playlistPlay bi-play-circle" id="4"></i>
+                        
+                </li>
+                <li class="songitem">
+                    <span>05</span>
+                    <img src="/img/vox/5.jpg" alt="">
+                    <h5>Don't Let Me Down <br>
+                        <div class="subtitle"> Chainsmokers - Vidya & KHS Remix</div>
+                    </h5>
+                    <i class="bi playlistPlay bi-play-circle" id="5"></i>
+                        
+                </li>
+                <li class="songitem">
+                    <span>06</span>
+                    <img src="/img/vox/6.jpg" alt="">
+                    <h5>Thalaivi <br>
+                        <div class="subtitle"> Vidya Vox</div>
+                    </h5>
+                    <i class="bi playlistPlay bi-play-circle" id="6"></i>
+                        
+                </li>
+                <li class="songitem">
+                    <span>07</span>
+                    <img src="/img/vox/7.jpg" alt="">
+                    <h5>Fly Away  Audio <br>
+                        <div class="subtitle"> Vidya Vox  (ft. MaatiBaani) </div>
+                    </h5>
+                    <i class="bi playlistPlay bi-play-circle" id="7"></i>
+                        
+                </li>
+                <li class="songitem">
+                    <span>08</span>
+                    <img src="/img/vox/8.jpg" alt="">
+                    <h5>Ello Jogappa <br>
+                        <div class="subtitle"> Vidya Vox</div>
+                    </h5>
+                    <i class="bi playlistPlay bi-play-circle" id="8"></i>
+                        
+                </li>
+            </div>
+        </div>
+        <div class="song_side">
+            <nav>
+                <ul>
+                    <li>DISCOVER <span></span></li>
+                    <li>MY LIBRARY</li>
+                    <li>RADIO</li>
+                </ul>
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Search Music...">
+                </div>
+                <div class="user">
+                    <img src="/img/img1.jpg" alt="">
+                </div>
+            </nav>
+            <div class="content">
+                <h1>vox-singh</h1>
+                <p>Arijit Singh is an Indian playback singer and music compose
+                    <br>He has recorded songs in several Indian languages</p>
+                    <div class="buttons">
+                        <button>PLAY</button>
+                        <button>FOLLOW</button>
+                    </div>
+            </div>
+            <div class="popular_song">
+                <div class="h4">
+                    <h4>Popular_song</h4>
+                    <div class="btn_s">
+                        <i class="bi bi-arrow-left-short" id="pop_song_left"></i>
+                        <i class="bi bi-arrow-right-short" id="pop_song_right"></i>
+                    </div>
+                </div>
+                <div class="pop_song">
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="/img/vox/9.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="9"></i>
+                        </div>
+                        <h5>Tamil Born Killa <br>
+                            <div class="subtitle"> Vidya Vox</div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="/img/vox/10.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="10"></i>
+                        </div>
+                        <h5>Dream Catcher <br>
+                            <div class="subtitle">Vidya Vox, Shashwat Singh </div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="/img/vox/11.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="11"></i>
+                        </div>
+                        <h5>Show Me Your Light<br>
+                            <div class="subtitle">Vidya Vox </div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="/img/vox/12.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="12"></i>
+                        </div>
+                        <h5>Make a Move <br>
+                            <div class="subtitle">Vidya Vox </div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="/img/vox/13.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="13"></i>
+                        </div>
+                        <h5>Appadi Podu Di <br>
+                            <div class="subtitle">Vidya Vox </div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="/img/vox/14.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="14"></i>
+                        </div>
+                        <h5>Minnale <br>
+                            <div class="subtitle">Vidya Vox </div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="/img/vox/15.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="15"></i>
+                        </div>
+                        <h5>Home <br>
+                            <div class="subtitle">Vidya Vox </div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="/img/vox/16.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="16"></i>
+                        </div>
+                        <h5>Where Are Ü Now <br>
+                            <div class="subtitle"> Vidya Vox </div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="/img/vox/17.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="17"></i>
+                        </div>
+                        <h5>Cold Water <br>
+                            <div class="subtitle">Vidya Vox </div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="/img/vox/18.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="18"></i>
+                        </div>
+                        <h5>Moonlight <br>
+                            <div class="subtitle"> Vidya Vox</div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="/img/vox/19.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="19"></i>
+                        </div>
+                        <h5>Butterfly  <br>
+                            <div class="subtitle">Vidya Vox </div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="/img/vox/20.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="20"></i>
+                        </div>
+                        <h5>Summer Love<br>
+                            <div class="subtitle">Vidya Vox, Maati Baani </div>
+                        </h5> 
+                    </li>
+                </div>
+            </div>
+            <div class="popular_artists">
+                <div class="h4">
+                    <h4>Popular_Aritist</h4>
+                    <div class="btn_s">
+                        <i class="bi bi-arrow-left-short" id="pop_art_left"></i>
+                        <i class="bi bi-arrow-right-short" id="pop_art_right"></i>
+                    </div>
+                </div>
+                <div class="item">
+                    <li>
+                        <a href="arijit.html"><img src="/img/arjit/arjit.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="index.html"><img src="/img/My-playlist.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <img src="/img/arjit/arjit.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="/img/arjit/arjit.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="/img/arjit/arjit.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="/img/arjit/arjit.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="/img/arjit/arjit.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="/img/arjit/arjit.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="/img/arjit/arjit.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="/img/arjit/arjit.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="/img/arjit/arjit.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="/img/arjit/arjit.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="/img/arjit/arjit.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="/img/arjit/arjit.jpg" alt="">
+                    </li>
+                </div>
+            </div>
+        </div>
+        <div class="master_play">
+            <div class="wave" id="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>
+            <img src="/img/img1.jpg" alt="" id="poster_master_play">
+            <h5 id="title">
+                Vande Mataram
+                <div class="subtitle">Bankim Chandra</div>
+            </h5>
+            <div class="icon">
+                <i class="bi shuffle bi-music-note-beamed">next</i>
+                <i class="bi bi-skip-start" id="back"></i>
+                <i class="bi bi-play-fill" id="masterPlay"></i>
+                <i class="bi bi-skip-end" id="next"></i>
+                <a href="#" download id="download_music"><i class="bi bi-cloud-arrow-down-fill" ></i></a>
+            </div>
+            <span id="currentStart">0:00</span>
+            <div class="bar">
+                <input type="range" id="seek" min="0" max="100">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+            </div>
+            <span id="currentEnd">0:30</span>
+            <div class="vol">
+                <i class="bi bi-volume-up-fill" id="vol_icon"></i>
+                <input type="range"  id="vol" min="0" max="100">
+                <div class="vol_bar"></div>
+                <div class="dot" id="vol_dot"></div>
+            </div>
+        </div>
+    </header>
+    
+    <script src="Vidya-vox.js"></script>
+</body>
+</html>

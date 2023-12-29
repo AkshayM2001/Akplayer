@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="left_bx1">
+            <div class="content">
+                <form  method="post">
+                    <h3>SignUp</h3>
+                    <div class="card">
+                        <label for="name"></label>
+                        <input type="text" name="user_name" placeholder="Enter Your Username" required>
+                    </div>
+                    <div class="card">
+                        <label for="password"></label>
+                        <input type="password" name="user_password" placeholder="Enter Your Password" required>
+                    </div>
+                    <div class="card">
+                        <label for="Re-password"></label>
+                        <input type="password" name="Re-password" placeholder="Repeat Your Password" required>
+                    </div>
+                    <input type="submit" value="Sign Up" class="submit">
+                    <div class="check">
+                        <input type="checkbox" id=""><span>Remeber Me</span>
+                    </div>
+                    <p>Already have a account !<a href="signup.html">Login</a></p>
+                </form>
+            </div>
+        </div>
+        <div class="right_bx1">
+            <img src="/img/login.png" alt="">
+            <h3>Incorrect Password</h3>
+        </div>
+    </header>
+    
+
+
+
+    <script src="login.js"></script>
+</body>
+</html>
