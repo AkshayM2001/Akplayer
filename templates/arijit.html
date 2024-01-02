@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Site</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="static/style.css">
+
+    <style>
+        header .song_side::before{
+            background: url(static/img/arjit/arjit.jpg);
+            /* background-size: cover; */
+            background-repeat: no-repeat;
+            margin:  60px 0 0 620px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+        <div class="menu_side">
+            <h1>Playlist</h1>
+            <div class="playlist">
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Playlist</h4>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i>Last Listened</h4>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i>Recomneded</h4>
+            </div>
+            <div class="menu_song">
+                <li class="songitem">
+                    <span>01</span>
+                    <img src="static/img/arjit/1.jpg" alt="">
+                    <h5>Hungamaa Ho Gaya  <br>
+                        <div class="subtitle">Asha Bhosle & Arijit-Singh</div>
+                    </h5>
+                    <i class="bi playlistPlay bi-play-circle" id="1"></i>
+                        
+                </li>
+                <li class="songitem">
+                    <span>02</span>
+                    <img src="static/img/arjit/2.jpg" alt="">
+                    <h5>Muskurahat  <br>
+        <div class="subtitle"> Arijit Singh</div>
+                    </h5>
+                    <i class="bi playlistPlay bi-play-circle" id="2"></i>
+                        
+                </li>
+                <li class="songitem">
+                    <span>03</span>
+                    <img src="static/img/arjit/3.jpg" alt="">
+                    <h5>Mehram <br>
+                        <div class="subtitle"> Arijit Singh</div>
+                    </h5>
+                    <i class="bi playlistPlay bi-play-circle" id="3"></i>
+                        
+                </li>
+                <li class="songitem">
+                    <span>04</span>
+                    <img src="static/img/arjit/4.jpg" alt="">
+                    <h5>Pal (From  Monsoon Shootout ) <br>
+                        <div class="subtitle">  Arijit Singh </div>
+                    </h5>
+                    <i class="bi playlistPlay bi-play-circle" id="4"></i>
+                        
+                </li>
+                <li class="songitem">
+                    <span>05</span>
+                    <img src="static/img/arjit/5.jpg" alt="">
+                    <h5>Tere Bina (From  Haseena Parkar ) <br>
+                        <div class="subtitle"> Arijit Singh</div>
+                    </h5>
+                    <i class="bi playlistPlay bi-play-circle" id="5"></i>
+                        
+                </li>
+                <li class="songitem">
+                    <span>06</span>
+                    <img src="static/img/arjit/6.jpg" alt="">
+                    <h5>Bachche Ki Jaan (From  102 Not Out )<br>
+                        <div class="subtitle"> Arijit Singh</div>
+                    </h5>
+                    <i class="bi playlistPlay bi-play-circle" id="6"></i>
+                        
+                </li>
+                <li class="songitem">
+                    <span>07</span>
+                    <img src="static/img/arjit/7.jpg" alt="">
+                    <h5>Dooba Dooba <br>
+                        <div class="subtitle"> Sunidhi Chauhan & Arijit Singh </div>
+                    </h5>
+                    <i class="bi playlistPlay bi-play-circle" id="7"></i>
+                        
+                </li>
+                <li class="songitem">
+                    <span>08</span>
+                    <img src="static/img/arjit/8.jpg" alt="">
+                    <h5>Andheron Mein Rishtey <br>
+                        <div class="subtitle"> Arijit Singh</div>
+                    </h5>
+                    <i class="bi playlistPlay bi-play-circle" id="8"></i>
+                        
+                </li>
+            </div>
+        </div>
+        <div class="song_side">
+            <nav>
+                <ul>
+                    <li>DISCOVER <span></span></li>
+                    <li>MY LIBRARY</li>
+                    <li>RADIO</li>
+                </ul>
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Search Music...">
+                </div>
+                <div class="user">
+                    <img src="static/img/img1.jpg" alt="">
+                </div>
+            </nav>
+            <div class="content">
+                <h1>Arjit-singh</h1>
+                <p>Arijit Singh is an Indian playback singer and music compose
+                    <br>He has recorded songs in several Indian languages</p>
+                    <div class="buttons">
+                        <button>PLAY</button>
+                        <button>FOLLOW</button>
+                    </div>
+            </div>
+            <div class="popular_song">
+                <div class="h4">
+                    <h4>Popular_song</h4>
+                    <div class="btn_s">
+                        <i class="bi bi-arrow-left-short" id="pop_song_left"></i>
+                        <i class="bi bi-arrow-right-short" id="pop_song_right"></i>
+                    </div>
+                </div>
+                <div class="pop_song">
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="static/img/arjit/9.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="9"></i>
+                        </div>
+                        <h5>Woh Subah Hami Se Aayegi  <br>
+                            <div class="subtitle">(From  Begum Jaan ) - Arijit Singh</div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="static/img/arjit/10.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="10"></i>
+                        </div>
+                        <h5>Sun bhi le  <br>
+                            <div class="subtitle"> Arijit Singh</div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="static/img/arjit/11.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="11"></i>
+                        </div>
+                        <h5>Tere Hawale <br>
+                            <div class="subtitle">Arijit Singh</div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="static/img/arjit/12.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="12"></i>
+                        </div>
+                        <h5>Dhokha  Arijit Singh<br>
+                            <div class="subtitle">Arijit Singh </div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="static/img/arjit/13.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="13"></i>
+                        </div>
+                        <h5>Bairiya <br>
+                            <div class="subtitle">Arijit Singh </div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="static/img/arjit/14.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="14"></i>
+                        </div>
+                        <h5>Tu Hai To Mujhe Phir Aur Kya Chahiye Arijit Singh<br>
+                            <div class="subtitle">Arijit Singh </div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="static/img/arjit/15.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="15"></i>
+                        </div>
+                        <h5>Chaleya<br>
+                            <div class="subtitle">Arijit Singh, Shilpa Rao</div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="static/img/arjit/16.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="16"></i>
+                        </div>
+                        <h5>Kesariya <br>
+                            <div class="subtitle"> Arijit Singh </div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="static/img/arjit/17.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="17"></i>
+                        </div>
+                        <h5>Pyaar Hota Kayi Baar Hai <br>
+                            <div class="subtitle">Arijit Singh </div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="static/img/arjit/18.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="18"></i>
+                        </div>
+                        <h5>Tere Pyar Mein <br>
+                            <div class="subtitle"> Arijit Singh</div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="static/img/arjit/19.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="19"></i>
+                        </div>
+                        <h5>Faraatta   <br>
+                            <div class="subtitle">Arijit Singh, Jonitha Gandhi, Badshah</div>
+                        </h5> 
+                    </li>
+                    <li class="songitem">
+                        <div class="img_play">
+                            <img src="static/img/arjit/20.jpg" alt="">
+                            <i class="bi playlistPlay bi-play-circle" id="20"></i>
+                        </div>
+                        <h5>Bandeya Rey Bandeya <br>
+                            <div class="subtitle">Arijit Singh, Asees Kaur</div>
+                        </h5> 
+                    </li>
+                </div>
+            </div>
+            <div class="popular_artists">
+                <div class="h4">
+                    <h4>Popular_Aritist</h4>
+                    <div class="btn_s">
+                        <i class="bi bi-arrow-left-short" id="pop_art_left"></i>
+                        <i class="bi bi-arrow-right-short" id="pop_art_right"></i>
+                    </div>
+                </div>
+                <div class="item">
+                    <li>
+                        <a href="index.html"><img src="static/img/My-playlist.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="Vidya-vox.html"><img src="static/img/vox/vidya-vox.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <img src="static/img/arjit/arjit.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="static/img/arjit/arjit.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="static/img/arjit/arjit.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="static/img/arjit/arjit.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="static/img/arjit/arjit.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="static/img/arjit/arjit.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="static/img/arjit/arjit.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="static/img/arjit/arjit.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="static/img/arjit/arjit.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="static/img/arjit/arjit.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="static/img/arjit/arjit.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="static/img/arjit/arjit.jpg" alt="">
+                    </li>
+                </div>
+            </div>
+        </div>
+        <div class="master_play">
+            <div class="wave" id="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>
+            <img src="static/img/img1.jpg" alt="" id="poster_master_play">
+            <h5 id="title">
+                Vande Mataram
+                <div class="subtitle">Bankim Chandra</div>
+            </h5>
+            <div class="icon">
+                <i class="bi shuffle bi-music-note-beamed">next</i>
+                <i class="bi bi-skip-start" id="back"></i>
+                <i class="bi bi-play-fill" id="masterPlay"></i>
+                <i class="bi bi-skip-end" id="next"></i>
+                <a href="#" download id="download_music"><i class="bi bi-cloud-arrow-down-fill" ></i></a>
+            </div>
+            <span id="currentStart">0:00</span>
+            <div class="bar">
+                <input type="range" id="seek" min="0" max="100">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+            </div>
+            <span id="currentEnd">0:30</span>
+            <div class="vol">
+                <i class="bi bi-volume-up-fill" id="vol_icon"></i>
+                <input type="range"  id="vol" min="0" max="100">
+                <div class="vol_bar"></div>
+                <div class="dot" id="vol_dot"></div>
+            </div>
+        </div>
+    </header>
+    
+    <script src="arijit.js"></script>
+</body>
+</html>

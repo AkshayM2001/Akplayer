@@ -22,6 +22,11 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns #new
 
 urlpatterns = [
     path('', views.index),
+    path('home', views.index),
+    path('login', views.login),
+    path('signup', views.signup),
+    path('Vidya_vox', views.Vidya_vox),
+    path('arijit', views.arijit),
 ]
 
 
