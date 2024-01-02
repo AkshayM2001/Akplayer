@@ -1,4 +1,4 @@
-const music = new Audio('/audio/1.mp3');
+const music = new Audio('/static/audio/1.mp3');
 // music.play();
 
 const songs = [
@@ -6,121 +6,121 @@ const songs = [
         id: 1,
         songName: `<h5>Hungamaa Ho Gaya  <br>
         <div class="subtitle">Asha Bhosle & Arijit-Singh</div>`,
-        poster: "/img/arjit/1.jpg/",
+        poster: "/static/img/arjit/1.jpg/",
     },
     {
         id: 2,
         songName: `Muskurahat  <br>
         <div class="subtitle"> Arijit Singh</div>`,
-        poster: "/img/arjit/2-1.jpg/",
+        poster: "/static/img/arjit/2-1.jpg/",
     },
     {
         id: 3,
         songName: `Mehram <br>
         <div class="subtitle"> Arijit Singh</div>`,
-        poster: "/img/arjit/3-1.jpg/",
+        poster: "/static/img/arjit/3-1.jpg/",
     },
     {
         id: 4,
         songName: `Pal (From  Monsoon Shootout ) <br>
         <div class="subtitle">  Arijit Singh </div>`,
-        poster: "/img/arjit/4-1.jpg/",
+        poster: "/static/img/arjit/4-1.jpg/",
     },
     {
         id: 5,
         songName: `Tere Bina (From  Haseena Parkar ) <br>
         <div class="subtitle"> Arijit Singh</div>`,
-        poster: "/img/arjit/5-1.jpg/",
+        poster: "/static/img/arjit/5-1.jpg/",
     },
     {
         id: 6,
         songName: `Bachche Ki Jaan (From  102 Not Out )<br>
         <div class="subtitle"> Arijit Singh</div>`,
-        poster: "/img/arjit/6-1.jpg/",
+        poster: "/static/img/arjit/6-1.jpg/",
     },
     {
         id: 7,
         songName: `Dooba Dooba <br>
         <div class="subtitle"> Sunidhi Chauhan & Arijit Singh </div>`,
-        poster: "/img/arjit/7.jpg/",
+        poster: "/static/img/arjit/7.jpg/",
     },
     {
         id: 8,
         songName: `Andheron Mein Rishtey <br>
         <div class="subtitle"> Arijit Singh</div>`,
-        poster: "/img/arjit/8-1.jpg/",
+        poster: "/static/img/arjit/8-1.jpg/",
     },
     {
         id: 9,
         songName: `Woh Subah Hami Se Aayegi  <br>
         <div class="subtitle">(From  Begum Jaan ) - Arijit Singh</div>`,
-        poster: "/img/arjit/9-1.jpg/",
+        poster: "/static/img/arjit/9-1.jpg/",
     },
     {
         id: 10,
         songName: `Sun bhi le  <br>
         <div class="subtitle"> Arijit Singh</div>`,
-        poster: "/img/arjit/10-1.jpg/",
+        poster: "/static/img/arjit/10-1.jpg/",
     },
     {
         id: 11,
         songName: `Tere Hawale <br>
         <div class="subtitle">Arijit Singh</div>`,
-        poster: "/img/arjit/11-1.jpg/",
+        poster: "/static/img/arjit/11-1.jpg/",
     },
     {
         id: 12,
         songName: `Dhokha  Arijit Singh<br>
         <div class="subtitle">Arijit Singh </div>`,
-        poster: "/img/arjit/12-1.jpg/",
+        poster: "/static/img/arjit/12-1.jpg/",
     },
     {
         id: 13,
         songName: `Bairiya <br>
         <div class="subtitle">Arijit Singh </div>`,
-        poster: "/img/arjit/13-1.jpg/",
+        poster: "/static/img/arjit/13-1.jpg/",
     },
     {
         id: 14,
         songName: `Tu Hai To Mujhe Phir Aur Kya Chahiye Arijit Singh<br>
         <div class="subtitle">Arijit Singh </div>`,
-        poster: "/img/arjit/14-1.jpg/",
+        poster: "/static/img/arjit/14-1.jpg/",
     },
     {
         id: 15,
         songName: `Chaleya<br>
         <div class="subtitle">Arijit Singh, Shilpa Rao</div>`,
-        poster: "/img/arjit/15-1.jpg/",
+        poster: "/static/img/arjit/15-1.jpg/",
     },
     {
         id: 16,
         songName: `Kesariya <br>
         <div class="subtitle"> Arijit Singh </div>`,
-        poster: "/img/arjit/16-1.jpg/",
+        poster: "/static/img/arjit/16-1.jpg/",
     },
     {
         id: 17,
         songName: `Pyaar Hota Kayi Baar Hai <br>
         <div class="subtitle">Arijit Singh </div>`,
-        poster: "/img/arjit/17-1.jpg/",
+        poster: "/static/img/arjit/17-1.jpg/",
     },
     {
         id: 18,
         songName: `Tere Pyar Mein <br>
         <div class="subtitle"> Arijit Singh</div>`,
-        poster: "/img/arjit/18-1.jpg/",
+        poster: "/static/img/arjit/18-1.jpg/",
     },
     {
         id: 19,
         songName: `Faraatta   <br>
         <div class="subtitle">Arijit Singh, Jonitha Gandhi, Badshah</div>`,
-        poster: "/img/arjit/19-1.jpg/",
+        poster: "/static/img/arjit/19-1.jpg/",
     },
     {
         id: 20,
         songName: `Bandeya Rey Bandeya <br>
         <div class="subtitle">Arijit Singh, Asees Kaur</div>`,
-        poster: "/img/arjit/20-1.jpg/",
+        poster: "/static/img/arjit/20-1.jpg/",
     }
 
 ]
@@ -179,14 +179,14 @@ Array.from(document.getElementsByClassName('playlistPlay')).forEach((e) => {
     e.addEventListener('click', (el) => {
         index = el.target.id;
         // console.log(index);
-        music.src = `/audio/arjit/${index}.mp3`;
-        poster_master_play.src = `/img/arjit/${index}.jpg`;
+        music.src = `/static/audio/arjit/${index}.mp3`;
+        poster_master_play.src = `/static/img/arjit/${index}.jpg`;
         music.play();
         masterPlay.classList.remove('bi-play-fill');
         masterPlay.classList.add('bi-pause-fill');
 
         // DOWNLOAD FUNCTIONS START
-        download_music.href = `/audio/arjit/${index}.mp3`;
+        download_music.href = `/static/audio/arjit/${index}.mp3`;
 
 
         
@@ -298,8 +298,8 @@ back.addEventListener('click', () => {
         index = Array.from(document.getElementsByClassName('songitem')).length;
     }
 
-    music.src = `/audio/arjit/${index}.mp3`;
-        poster_master_play.src = `/img/arjit/${index}.jpg`;
+    music.src = `/static/audio/arjit/${index}.mp3`;
+        poster_master_play.src = `/static/img/arjit/${index}.jpg`;
         music.play();
         masterPlay.classList.remove('bi-play-fill');
         masterPlay.classList.add('bi-pause-fill');
@@ -331,8 +331,8 @@ next.addEventListener('click', () => {
         index = 1;
     }
 
-    music.src = `/audio/arjit/${index}.mp3`;
-        poster_master_play.src = `/img/arjit/${index}.jpg`;
+    music.src = `/static/audio/arjit/${index}.mp3`;
+        poster_master_play.src = `/static/img/arjit/${index}.jpg`;
         music.play();
         masterPlay.classList.remove('bi-play-fill');
         masterPlay.classList.add('bi-pause-fill');
@@ -436,14 +436,14 @@ const next_music = () => {
 
     index ++;  ///ONLY CHANGED THIS ++;
     // console.log(index);
-    music.src = `/audio/arjit/${index}.mp3`;
-    poster_master_play.src = `/img/arjit/${index}.jpg`;
+    music.src = `/static/audio/arjit/${index}.mp3`;
+    poster_master_play.src = `/static/img/arjit/${index}.jpg`;
     music.play();
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause-fill');
 
     // DOWNLOAD FUNCTIONS START
-    download_music.href = `/audio/arjit/${index}.mp3`;
+    download_music.href = `/static/audio/arjit/${index}.mp3`;
 
 
     
@@ -477,14 +477,14 @@ const repeat_music = () => {
 
     index;  ///ONLY CHANGED THIS ;
     // console.log(index);
-    music.src = `/audio/arjit/${index}.mp3`;
-    poster_master_play.src = `/img/arjit/${index}.jpg`;
+    music.src = `/static/audio/arjit/${index}.mp3`;
+    poster_master_play.src = `/static/img/arjit/${index}.jpg`;
     music.play();
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause-fill');
 
     // DOWNLOAD FUNCTIONS START
-    download_music.href = `/audio/arjit/${index}.mp3`;
+    download_music.href = `/static/audio/arjit/${index}.mp3`;
 
 
     
@@ -521,14 +521,14 @@ const random_music = () => {
     }
 
 
-    music.src = `/audio/arjit/${index}.mp3`;
-    poster_master_play.src = `/img/arjit/${index}.jpg`;
+    music.src = `/static/audio/arjit/${index}.mp3`;
+    poster_master_play.src = `/static/img/arjit/${index}.jpg`;
     music.play();
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause-fill');
 
     // DOWNLOAD FUNCTIONS START
-    download_music.href = `/audio/arjit/${index}.mp3`;
+    download_music.href = `/static/audio/arjit/${index}.mp3`;
 
 
     

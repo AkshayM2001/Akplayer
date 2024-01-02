@@ -1,4 +1,4 @@
-const music = new Audio('static/audio/1.mp3');
+const music = new Audio('/static/audio/1.mp3');
 // music.play();
 
 const songs = [
@@ -6,121 +6,121 @@ const songs = [
         id: 1,
         songName: `<h5>Be Free <br>
         <div class="subtitle"> Vidya Vox </div>`,
-        poster: "static/img/vox/1.jpg/",
+        poster: "/static/img/vox/1.jpg/",
     },
     {
         id: 2,
         songName: `Diamonds  <br>
         <div class="subtitle"> Vidya Vox, and Arjun</div>`,
-        poster: "static/img/vox/2-1.jpg/",
+        poster: "/static/img/vox/2-1.jpg/",
     },
     {
         id: 3,
         songName: `Kuthu Fire x<br>
         <div class="subtitle"> Vidya Vo</div>`,
-        poster: "static/img/vox/3-1.jpg/",
+        poster: "/static/img/vox/3-1.jpg/",
     },
     {
         id: 4,
         songName: `Subha Mangalyam <br>
         <div class="subtitle">  Vidya Vox </div>`,
-        poster: "static/img/vox/4-1.jpg/",
+        poster: "/static/img/vox/4-1.jpg/",
     },
     {
         id: 5,
         songName: `Don't Let Me Down <br>
         <div class="subtitle"> Chainsmokers - Vidya & KHS Remix</div>`,
-        poster: "static/img/vox/5-1.jpg/",
+        poster: "/static/img/vox/5-1.jpg/",
     },
     {
         id: 6,
         songName: `Thalaivi <br>
         <div class="subtitle"> Vidya Vox</div>`,
-        poster: "static/img/vox/6-1.jpg/",
+        poster: "/static/img/vox/6-1.jpg/",
     },
     {
         id: 7,
         songName: `Fly Away  Audio <br>
         <div class="subtitle"> Vidya Vox  (ft. MaatiBaani) </div>`,
-        poster: "static/img/vox/7.jpg/",
+        poster: "/static/img/vox/7.jpg/",
     },
     {
         id: 8,
         songName: `Ello Jogappa <br>
         <div class="subtitle"> Vidya Vox</div>`,
-        poster: "static/img/vox/8-1.jpg/",
+        poster: "/static/img/vox/8-1.jpg/",
     },
     {
         id: 9,
         songName: `Tamil Born Killa <br>
         <div class="subtitle"> Vidya Vox</div>`,
-        poster: "static/img/vox/9-1.jpg/",
+        poster: "/static/img/vox/9-1.jpg/",
     },
     {
         id: 10,
         songName: `Dream Catcher <br>
         <div class="subtitle">Vidya Vox, Shashwat Singh </div>`,
-        poster: "static/img/vox/10-1.jpg/",
+        poster: "/static/img/vox/10-1.jpg/",
     },
     {
         id: 11,
         songName: `Show Me Your Light<br>
         <div class="subtitle">Vidya Vox </div>`,
-        poster: "static/img/vox/11-1.jpg/",
+        poster: "/static/img/vox/11-1.jpg/",
     },
     {
         id: 12,
         songName: `Make a Move <br>
         <div class="subtitle">Vidya Vox </div>`,
-        poster: "static/img/vox/12-1.jpg/",
+        poster: "/static/img/vox/12-1.jpg/",
     },
     {
         id: 13,
         songName: `Appadi Podu Di <br>
         <div class="subtitle">Vidya Vox </div>`,
-        poster: "static/img/vox/13-1.jpg/",
+        poster: "/static/img/vox/13-1.jpg/",
     },
     {
         id: 14,
         songName: `Minnale <br>
         <div class="subtitle">Vidya Vox </div>`,
-        poster: "static/img/vox/14-1.jpg/",
+        poster: "/static/img/vox/14-1.jpg/",
     },
     {
         id: 15,
         songName: `Home <br>
         <div class="subtitle">Vidya Vox </div>`,
-        poster: "static/img/vox/15-1.jpg/",
+        poster: "/static/img/vox/15-1.jpg/",
     },
     {
         id: 16,
         songName: `Where Are Ü Now <br>
         <div class="subtitle"> Vidya Vox </div>`,
-        poster: "static/img/vox/16-1.jpg/",
+        poster: "/static/img/vox/16-1.jpg/",
     },
     {
         id: 17,
         songName: `Cold Water <br>
         <div class="subtitle">Vidya Vox </div>`,
-        poster: "static/img/vox/17-1.jpg/",
+        poster: "/static/img/vox/17-1.jpg/",
     },
     {
         id: 18,
         songName: `Moonlight <br>
         <div class="subtitle"> Vidya Vox</div>`,
-        poster: "static/img/vox/18-1.jpg/",
+        poster: "/static/img/vox/18-1.jpg/",
     },
     {
         id: 19,
         songName: `Butterfly  <br>
         <div class="subtitle">Vidya Vox </div>`,
-        poster: "static/img/vox/19-1.jpg/",
+        poster: "/static/img/vox/19-1.jpg/",
     },
     {
         id: 20,
         songName: `Summer Love<br>
         <div class="subtitle">Vidya Vox, Maati Baani </div>`,
-        poster: "static/img/vox/20-1.jpg/",
+        poster: "/static/img/vox/20-1.jpg/",
     }
 
 ]
@@ -179,14 +179,14 @@ Array.from(document.getElementsByClassName('playlistPlay')).forEach((e) => {
     e.addEventListener('click', (el) => {
         index = el.target.id;
         // console.log(index);
-        music.src = `static/audio/vox/${index}.mp3`;
-        poster_master_play.src = `static/img/vox/${index}.jpg`;
+        music.src = `/static/audio/vox/${index}.mp3`;
+        poster_master_play.src = `/static/img/vox/${index}.jpg`;
         music.play();
         masterPlay.classList.remove('bi-play-fill');
         masterPlay.classList.add('bi-pause-fill');
 
         // DOWNLOAD FUNCTIONS START
-        download_music.href = `static/audio/vox/${index}.mp3`;
+        download_music.href = `/static/audio/vox/${index}.mp3`;
 
 
         
@@ -298,8 +298,8 @@ back.addEventListener('click', () => {
         index = Array.from(document.getElementsByClassName('songitem')).length;
     }
 
-    music.src = `static/audio/vox/${index}.mp3`;
-        poster_master_play.src = `static/img/vox/${index}.jpg`;
+    music.src = `/static/audio/vox/${index}.mp3`;
+        poster_master_play.src = `/static/img/vox/${index}.jpg`;
         music.play();
         masterPlay.classList.remove('bi-play-fill');
         masterPlay.classList.add('bi-pause-fill');
@@ -331,8 +331,8 @@ next.addEventListener('click', () => {
         index = 1;
     }
 
-    music.src = `static/audio/vox/${index}.mp3`;
-        poster_master_play.src = `static/img/vox/${index}.jpg`;
+    music.src = `/static/audio/vox/${index}.mp3`;
+        poster_master_play.src = `/static/img/vox/${index}.jpg`;
         music.play();
         masterPlay.classList.remove('bi-play-fill');
         masterPlay.classList.add('bi-pause-fill');
@@ -436,14 +436,14 @@ const next_music = () => {
 
     index ++;  ///ONLY CHANGED THIS ++;
     // console.log(index);
-    music.src = `static/audio/vox/${index}.mp3`;
-    poster_master_play.src = `static/img/vox/${index}.jpg`;
+    music.src = `/static/audio/vox/${index}.mp3`;
+    poster_master_play.src = `/static/img/vox/${index}.jpg`;
     music.play();
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause-fill');
 
     // DOWNLOAD FUNCTIONS START
-    download_music.href = `static/audio/vox/${index}.mp3`;
+    download_music.href = `/static/audio/vox/${index}.mp3`;
 
 
     
@@ -477,14 +477,14 @@ const repeat_music = () => {
 
     index;  ///ONLY CHANGED THIS ;
     // console.log(index);
-    music.src = `static/audio/vox/${index}.mp3`;
-    poster_master_play.src = `static/img/vox/${index}.jpg`;
+    music.src = `/static/audio/vox/${index}.mp3`;
+    poster_master_play.src = `/static/img/vox/${index}.jpg`;
     music.play();
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause-fill');
 
     // DOWNLOAD FUNCTIONS START
-    download_music.href = `static/audio/vox/${index}.mp3`;
+    download_music.href = `/static/audio/vox/${index}.mp3`;
 
 
     
@@ -521,14 +521,14 @@ const random_music = () => {
     }
 
 
-    music.src = `static/audio/vox/${index}.mp3`;
-    poster_master_play.src = `static/img/vox/${index}.jpg`;
+    music.src = `/static/audio/vox/${index}.mp3`;
+    poster_master_play.src = `/static/img/vox/${index}.jpg`;
     music.play();
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause-fill');
 
     // DOWNLOAD FUNCTIONS START
-    download_music.href = `static/audio/vox/${index}.mp3`;
+    download_music.href = `/static/audio/vox/${index}.mp3`;
 
 
     
