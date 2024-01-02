@@ -25,7 +25,7 @@ urlpatterns = [
     path('home', views.index),
     path('login', views.login),
     path('signup', views.signup),
-    path('Vidya_vox', views.Vidya_vox),
+    path('vidya_vox', views.Vidya_vox),
     path('arijit', views.arijit),
 ]
 
